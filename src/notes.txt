@@ -1,0 +1,7 @@
+ASSUMPTIONS
+1. It is possible for an employee to report to multiple employees
+2. In this requirement "This new endpoint should accept an employeeId and return the fully filled out ReportingStructure for the specified employeeId"
+    1. Reporting structure only contains requested Employee object and 'numberOfReports' property and only this data is returned.
+    2. It does not contain the nested Employee objects corresponding to direct reports in the tree.
+3. directReports field on Employee is List<Employee>. Not List<String>.
+4. A single employee can have multiple Compensation objects associated with them. However, no two Compensation objects for the same employee can have same effective date.
